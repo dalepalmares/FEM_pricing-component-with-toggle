@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+  </head>
+  <body class="font-montserrat bg-neutral-veryLightGrayishBlue">
+    <div class="container w-screen h-full px-6 pt-12 pb-16 m-auto bg-right-top">
+      <div class="text-center">
+        <h1 class="text-3xl text-neutral-grayishBlue">
+          Our Pricing
+        </h1>
+        <div
+          class="flex items-center justify-center mt-8 text-sm text-neutral-lightGrayishBlue"
+        >
+          <span>Annually</span>
+          <!-- Toggle -->
+          <div
+            class="relative flex items-center px-1 mx-6 rounded-full cursor-pointer toggle bg-primary-linearGradient"
+          >
+            <div class="bg-white rounded-full circle"></div>
+          </div>
+          <span>Monthly</span>
+        </div>
+      </div>
+
+      <div
+        class="mt-20 lg:grid lg:grid-cols-3 cards-container lg:mx-auto lg:mt-16"
+      >
+        <div
+          class="p-8 mx-auto text-center bg-white rounded-lg first-card card lg:mx-0 lg:my-5 lg:rounded-r-none"
+        >
+          <h3 class="mt-2 text-lg text-neutral-grayishBlue">
+            Basic
+          </h3>
+          <h2 class="mt-3 text-6xl text-neutral-darKGrayishBlue monthly">
+            &dollar;19.99
+          </h2>
+          <h2
+            class="hidden mt-3 text-6xl text-neutral-darKGrayishBlue annually"
+          >
+            &dollar;199.99
+          </h2>
+
+          <ul class="mt-5 text-sm text-neutral-grayishBlue">
+            <li class="py-4 border-t border-borderColor">
+              500 GB Storage
+            </li>
+            <li class="py-4 border-t border-borderColor">
+              2 Users Allowed
+            </li>
+            <li class="py-4 border-t border-b border-borderColor">
+              Send up to 3 GB
+            </li>
+          </ul>
+          <button
+            class="w-full py-3 mt-8 tracking-widest text-white uppercase rounded-md button"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <div
+          class="z-50 p-8 mx-auto mt-8 text-center text-white bg-white rounded-lg card second-card lg:m-0"
+        >
+          <h3 class="mt-2 text-lg">
+            Professional
+          </h3>
+          <h2 class="mt-3 text-6xl monthly">
+            &dollar;24.99
+          </h2>
+          <h2 class="hidden mt-3 text-6xl annually">
+            &dollar;249.99
+          </h2>
+          <ul class="mt-5 text-sm">
+            <li class="py-4 border-t">
+              1 TB Storage
+            </li>
+            <li class="py-4 border-t">
+              5 Users Allowed
+            </li>
+            <li class="py-4 border-t border-b">
+              Send up to 10 GB
+            </li>
+          </ul>
+          <button
+            class="w-full py-3 mt-8 tracking-widest uppercase bg-white rounded-md second-button"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <div
+          class="p-8 mx-auto mt-8 text-center bg-white rounded-lg third-card card lg:mx-0 lg:my-5 lg:rounded-l-none"
+        >
+          <h3 class="mt-2 text-lg text-neutral-grayishBlue">
+            Master
+          </h3>
+          <h2 class="mt-3 text-6xl text-neutral-darKGrayishBlue monthly">
+            &dollar;39.99
+          </h2>
+          <h2
+            class="hidden mt-3 text-6xl text-neutral-darKGrayishBlue annually"
+          >
+            &dollar;399.99
+          </h2>
+          <ul class="mt-5 text-sm text-neutral-grayishBlue">
+            <li class="py-4 border-t border-borderColor">
+              2 TB Storage
+            </li>
+            <li class="py-4 border-t border-borderColor">
+              10 Users Allowed
+            </li>
+            <li class="py-4 border-t border-b border-borderColor">
+              Send up to 20 GB
+            </li>
+          </ul>
+          <button
+            class="w-full py-3 mt-8 tracking-widest text-white uppercase rounded-md button"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

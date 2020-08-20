@@ -1,0 +1,15 @@
+{
+  "name": "pricing_component_with_toggle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss build tailwind/style.css -o dist/css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^1.7.1"
+  }
+}

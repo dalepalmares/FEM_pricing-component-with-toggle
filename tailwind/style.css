@@ -1,0 +1,68 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+  background-image: url(/dist/images/bg-top.svg);
+  background-repeat: no-repeat;
+  background-position: 13rem -2rem;
+  background-size: contain;
+}
+
+.toggle {
+  width: 3.4rem;
+  height: 1.9rem;
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.toggle .circle {
+  transform: translateX(100%);
+  width: 1.4rem;
+  height: 1.4rem;
+  transition: all 100ms linear;
+}
+
+.button {
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  font-size: 13px;
+}
+.second-button {
+  background: white;
+  font-size: 13px;
+  color: hsl(237, 63%, 64%);
+}
+
+.card {
+  -webkit-box-shadow: 0px 4px 41px 2px rgba(219, 219, 219, 1);
+  -moz-box-shadow: 0px 4px 41px 2px rgba(219, 219, 219, 1);
+  box-shadow: 0px 4px 41px 2px rgba(219, 219, 219, 1);
+  max-width: 22rem;
+}
+
+.second-card {
+  background: linear-gradient(
+    to bottom,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url(/dist/images/bg-top.svg),
+      url(/dist/images/bg-bottom.svg);
+
+    background-position: 66rem 0rem, 0rem 32rem;
+    background-size: 24rem, 22rem;
+  }
+
+  .cards-container {
+    max-width: 65rem;
+  }
+
+  .second-card {
+    padding-top: 3.2rem;
+  }
+}
