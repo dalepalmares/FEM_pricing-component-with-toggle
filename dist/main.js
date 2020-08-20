@@ -31,6 +31,3 @@ button.addEventListener("click", () => {
     toggle = false;
   }
 });
-
-console.log(annualPrices);
-console.log(monthlyPrices);
